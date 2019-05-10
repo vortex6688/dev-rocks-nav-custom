@@ -1,0 +1,87 @@
+/* Globally reset margin to 0 */
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* General body styling */
+body {
+  /* page background */
+  background: #252322;
+  /* All the text elements inside the body tag will be white */
+  color: #fff;
+  /* center elements inside the body tag */
+  text-align: center;
+}
+
+a {
+  /* All the "link" type text elements inside the body tag will be white */
+  color: #fff;
+  /* All the "link" type text elements will not be underlined or have any other text decorations */
+  text-decoration: none;
+  /* All the "link" type text elements will have some space between them */
+  padding: 12px;
+}
+
+/* Header styles */
+
+
+/* Navigation styles applied when it has a "hidden" state */
+
+
+/* Navigation styles */
+nav {
+  width: 100%;
+  /* using "flex" layout */
+  display: flex;
+  /* center "flex" layout items */
+  justify-content: center;
+  /* show a border of the navigation block to make it clearer what is going on with it once we trigger show/hide action */
+  border: 1px #fff solid;
+  /* set box-sizing so border would be taking one pixel of the inner space of the navigation block */
+  box-sizing: border-box;
+  /* push the content under the navigation a bit down */
+  /* margin-bottom: 50px; */
+}
+
+/* Navigation icon styles */
+.icon {
+  /* setting the size of the icon */
+  width: 32px;
+  /* setting position of the icon to "absolute" to keep it fixed in the left top corner and not affecting navigation elements */
+  position: absolute;
+  /* padding icon from the left and top side */
+  left: 10px;
+  top: 10px;
+  z-index: 100;
+  /* Hovering over an icon will transform the cursor into a pointer to show that element is cliackable */
+  cursor: pointer;
+  /* transition gives a nice animation effect */
+  transition: 0.5s
+}
+
+/* Navigation icon animation styles when clicked */
+.icon.open {
+  /* this icon position is pointing down, reflecting it's action if it would be clicked, which will pull the navigation up and hide it off the screen  */
+  transform: rotate(45deg);
+  /* transition gives a nice animation effect */
+  transition: 0.5s;
+}
+
+/* Utility class to give an element absolute positioning */
+.absolute {
+  position: absolute;
+}
+
+/* make some space around the h1 title tag to make the content look a bit better */
+h1 {
+  margin: 60px 0;
+}
+
+/* hidden utility class */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drop Down Navigation</title>
+  <meta name="description" content="Drop Down Navigation">
+  <link href="style.css" rel="stylesheet">
+  <script src="navController.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation trigger element, triggers show/hide the navigations event -->
+    <img class="icon hidden" src="images/mobile-icon.png" />
+
+    <!-- Navigation block, will be shown or hidden when the icon is clicked on -->
+    <nav class="nav-hidden">
+      <a href="">
+        <h2>Home</h2>
+      </a>
+      <a href="">
+        <h2>Portfolio</h2>
+      </a>
+      <a href="">
+        <h2>About Us</h2>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Just some randon content for this example, website title and slogan of some kind -->
+  <section style="transition: all 0.5s;">
+    <h1>Dropdown Navigation</h1>
+    <h2>Is really that simple</h2>
+  </section>
+
+  <script>
+    mobileNav("nav", ".icon", 600, 0.5, "slide", "left");
+  </script>
+</body>
+
+</html>
